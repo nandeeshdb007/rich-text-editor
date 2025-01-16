@@ -32,6 +32,7 @@ const Toolbar = ({ editor, content }: Props) => {
     >
       <div className="flex justify-start items-center gap-5 w-full lg:w-10/12 flex-wrap ">
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleBold().run();
@@ -45,6 +46,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Bold className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleItalic().run();
@@ -58,6 +60,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Italic className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleUnderline().run();
@@ -71,6 +74,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Underline className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleStrike().run();
@@ -84,6 +88,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Strikethrough className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleHeading({ level: 2 }).run();
@@ -98,6 +103,7 @@ const Toolbar = ({ editor, content }: Props) => {
         </button>
 
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleBulletList().run();
@@ -111,6 +117,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <List className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleOrderedList().run();
@@ -124,6 +131,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <ListOrdered className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().toggleBlockquote().run();
@@ -137,6 +145,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Quote className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().setCode().run();
@@ -150,6 +159,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Code className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().undo().run();
@@ -163,6 +173,7 @@ const Toolbar = ({ editor, content }: Props) => {
           <Undo className="w-5 h-5" />
         </button>
         <button
+          type="button"
           onClick={(e) => {
             e.preventDefault();
             editor.chain().focus().redo().run();
